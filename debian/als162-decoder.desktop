@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.5
+Name=ALS162 Decoder (terminal)
+Name[es]=ALS162 Decoder (terminal)
+Comment=List audio devices for the ALS162 terminal decoder
+Comment[es]=Lista los dispositivos de audio para el decodificador ALS162 de terminal
+Exec=sh -c 'als162_decoder --list; echo; echo "Run: als162_decoder --device N --verbose [--set-time]"; exec "${SHELL:-sh}"'
+TryExec=als162_decoder
+Icon=utilities-terminal
+Terminal=true
+Categories=Utility;ConsoleOnly;HamRadio;
+Keywords=ALS162;time;clock;sync;radio;SDR;terminal;
+NoDisplay=false
